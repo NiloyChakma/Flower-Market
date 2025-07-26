@@ -32,6 +32,7 @@ nav ul li
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    flex-direction: column-reverse;
     margin: auto 189px 111px;
 }
 .greeting
@@ -221,6 +222,13 @@ footer div ul li a
 }
 @media screen and (max-width: 576px)
 {
+    .fresh
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        /* margin: auto 189px 111px; */
+    }
     .lover
     {
         display: grid;
