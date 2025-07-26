@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
@@ -13,77 +17,76 @@
                 <img src="./assets/logo.png" alt="Loading!"/>
             </div>
             <div>
-                <ul class="option">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Cart ($56)</a></li>
+                <ul>
+                    <li class="responsive-none"><a href="" class="modified-black">Home</a></li>
+                    <li class="responsive-none"><a href="" class="gray">Shop</a></li>
+                    <li class="responsive-none"><a href="" class="gray">About Us</a></li>
+                    <li><a href="" class="black"><i class="fas fa-shopping-cart"></i> Cart ($56)</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <div class="fresh">
-            <div class="greeting">
-                <h2>ALWAYS <span class="orange">FRESH</span></h2>
-                <h2><span class="orange">FLOWERS</span></h2>
-                <p>Welcome here, where every bloom tells a story. Hand-picked with care and delivered with love, our flowers arrive vibrant and full of life. Let nature's freshest beauty brighten your moments, every day.</p>
+            <div class="greeting always">
+                <h1 class="noto-serif-normal">ALWAYS <span class="orange">FRESH<br><span class="orange">FLOWERS</span></h1>
+                <p class="inter-normal">Welcome here, where every bloom tells a story. Hand-picked with care and delivered with love, our flowers arrive vibrant and full of life. Let nature's freshest beauty brighten your moments, every day.</p>
             </div>
             <div>
-                <img src="./assets/hero-flower.png" alt="Fresh"/>
+                <img src="./assets/hero-flower.png" class="hero" alt="Fresh"/>
             </div>
         </div>
         <div class="plant">
-            <h2><span class="orange">Our</span> Plants</h2>
-            <p>We offer vibrant flowering plants that bring life, color and joy to any space, perfect for homes, gardens or heartfelt gifts.</p>
+            <h1><span class="orange">Our</span> Plants</h1>
+            <p class="inter-normal">We offer vibrant flowering plants that bring life, color and joy to any space, perfect for homes, gardens or heartfelt gifts.</p>
             <div class="plants">
                 <div class="single-plant">
-                    <img src="./assets/sample-flower-image.png" alt="Flower image is loading"/>
-                    <h3>Lily Blossom</h3>
-                    <h3>20 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/sample-flower-image.png" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Lily Blossom</h3>
+                    <h3 class="inter-normal">20 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/rose.jpg" alt="Flower image is loading" width="270" height="322.94"/>
-                    <h3>Rose</h3>
-                    <h3>25 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/rose.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Rose</h3>
+                    <h3 class="inter-normal">25 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/orchid.jpg" alt="Flower image is loading" width="270" height="322.94"/>
-                    <h3>Orchid</h3>
-                    <h3>30 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/orchid.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Orchid</h3>
+                    <h3 class="inter-normal">30 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/tulip.jpg" alt="Flower image is loading" width="270" height="322.94"/>
-                    <h3>Tulip</h3>
-                    <h3>18 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/tulip.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Tulip</h3>
+                    <h3 class="inter-normal">15 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/sample-flower-image.png" alt="Flower image is loading"/>
-                    <h3>Lily Blossom</h3>
-                    <h3>20 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/poppy.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Poppy</h3>
+                    <h3 class="inter-normal">17 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/sample-flower-image.png" alt="Flower image is loading"/>
-                    <h3>Lily Blossom</h3>
-                    <h3>20 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/iris.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Iris</h3>
+                    <h3 class="inter-normal">23 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/sample-flower-image.png" alt="Flower image is loading"/>
-                    <h3>Lily Blossom</h3>
-                    <h3>20 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/marigold.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Marigold</h3>
+                    <h3 class="inter-normal">15 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
                 <div class="single-plant">
-                    <img src="./assets/sample-flower-image.png" alt="Flower image is loading"/>
-                    <h3>Lily Blossom</h3>
-                    <h3>20 USD</h3>
-                    <button type="submit" class="btn-cart">ADD TO CART</button>
+                    <img src="./assets/dahlia.jpg" alt="Flower image is loading" class="single-plant-f" width="270" height="322.94"/>
+                    <h3 class="inter-normal">Dahlia</h3>
+                    <h3 class="inter-normal">12 USD</h3>
+                    <button type="submit" class="btn-cart inter-normal">ADD TO CART</button>
                 </div>
             </div>
         </div>
@@ -92,10 +95,12 @@
                 <img class="badge" src="./assets/trusted-badge.png" alt="Badge"/>
             </div>
             <div class="lover">
-                <div><img src="./assets/flower-store.png" alt="Boys love flower!"/></div>
                 <div>
-                    <h2>Flower & Plants Lover</h2>
-                    <ul>
+                    <img src="./assets/flower-store.png" alt="Boys love flower!" class="boy"/>
+                </div>
+                <div>
+                    <h2 class="noto-serif-normal">Flower & Plants Lover</h2>
+                    <ul class="inter-normal">
                         <li>Beneath every petal lies a world of wonder, a fragile perfection that only the heart of a flower lover can truly understand.</li>
                         <li>Among wild petals and morning dew, I find a quiet joy that no words can match, only the soft rustle of blossoms can express.</li>
                         <li>A garden in full bloom is like a symphony of color and scent, where every flower plays its part in nature's quiet song.</li>
@@ -104,37 +109,37 @@
             </div>
         </div>
         <div class="deals">
-            <h2><span class="orange">Latest</span> Deals</h2>
-            <p>Discover irresistible offers on our freshest blooms, bringing you stunning flowers at blooming-good prices every day!</p>
+            <h1 class="noto-serif-normal"><span class="orange">Latest</span> Deals</h1>
+            <p class="inter-normal">Discover irresistible offers on our freshest blooms, bringing you stunning flowers at blooming-good prices every day!</p>
         </div>
         <div class="off">
             <div class="bloom-ana">
                 <div class="bloom">
                     <h3>60% Off | Bloom Plant</h3>
-                    <a class="white-shop" href="" alt="">Shop Now</a>
+                    <a class="white-shop inter-normal" href="" alt="">Shop Now</a>
                 </div>
                 <div class="ana" >
                     <h3>30% Off | Ana  Plant</h3>
-                    <a class="white-shop" href="" alt="">Shop Now</a>
+                    <a class="white-shop inter-normal" href="" alt="">Shop Now</a>
                 </div>
             </div>
             <div class="zabo">
                 <h2>25% Off | Zabo Plant</h2>
-                <a class="white-shop" href="" alt="">Shop Now</a>
+                <a class="white-shop inter-normal" href="" alt="">Shop Now</a>
             </div>
         </div>
         <div class="subscribe">
-            <h2 class="white">Join the colorful Bunch</h2>
+            <h2 class="white-shop noto-serif-normal">Join the colorful Bunch</h2>
             <div class="sub">
                 <input type="email" placeholder="Write email"/>
-                <button type="submit">Subscribe</button>
+                <button type="submit" class="sub-btn inter-normal">Subscribe</button>
             </div>
         </div>
     </main>
     <footer class="contact">
         <div>
             <div><img src="./assets/logo.png" alt="Loading!"/></div>
-            <p>Let your world blossom with the beauty of our lovingly grown flowering plants.</p>
+            <p class="inter-normal">Let your world blossom with the beauty of our lovingly grown flowering plants.</p>
         </div>
         <div>
             <ul>

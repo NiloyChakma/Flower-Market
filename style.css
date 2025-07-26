@@ -1,51 +1,59 @@
-/* nav ul li
+.inter-normal 
 {
-    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.noto-serif-normal 
+{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+.header-1 
+{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 30px 150px auto;
+}
+nav ul 
+{
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding: 0;
 }
 nav ul li a
 {
     text-decoration: none;
 }
-nav ul li
-{
-    display: flex;
-    justify-content: space-between;
-} */
-.header-1
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 150px auto;
-}
-.option
+nav ul li 
 {
     list-style: none;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.fresh
+.fresh 
 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex-direction: column-reverse;
-    margin: auto 189px 111px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 150px;
 }
-.greeting
+.greeting 
 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.orange
+.orange 
 {
-    color: #E95A08;
+    color: #e95a08;
 }
-.plant
+.plant 
 {
     display: flex;
     flex-direction: column;
@@ -53,56 +61,63 @@ nav ul li
     align-items: center;
     margin: auto 150px;
 }
-.plants
+.plants 
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 30px;
 }
-.single-plant
+.single-plant 
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.btn-cart
+.btn-cart 
 {
-    background-color: #E95A08;
+    background-color: #e95a08;
     width: 270px;
     height: 50px;
     color: white;
     border: none;
 }
-.recommend
+.recommend 
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.badge
+.wrapper 
+{
+    position: relative; 
+}
+.badge 
 {
     width: 286px;
     height: 286px;
-    /* z-index: 4; */
+    position: absolute;
+    top: 1650px; 
+    left: 485px; 
+    z-index: 1; 
 }
-.lover
+.lover 
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    margin: auto 150px;
+    column-gap: 30px;
+    margin: 150px 150px auto;
 }
-.deals
+.deals 
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.off
+.off 
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,14 +125,14 @@ nav ul li
     color: white;
     margin: auto 150px;
 }
-.bloom-ana
+.bloom-ana 
 {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     row-gap: 25px;
     color: white;
 }
-.bloom
+.bloom 
 {
     background-image: url(./assets/deal-bloom.png);
     background-size: cover;
@@ -129,10 +144,10 @@ nav ul li
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     font-size: 20px;
 }
-.ana
+.ana 
 {
     background-image: url(./assets/deal-ana.png);
     background-size: cover;
@@ -147,7 +162,7 @@ nav ul li
     align-items: center;
     font-size: 20px;
 }
-.zabo
+.zabo 
 {
     background-image: url(./assets/deal-zabo.png);
     background-size: cover;
@@ -162,98 +177,175 @@ nav ul li
     align-items: center;
     font-size: 40px;
 }
-.subscribe
+.subscribe 
 {
     background-image: url(./assets/news-letter-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 1440px;
+    width: 100%;
     height: 533px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* .sub
+.sub
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: -2px;
-} */
-footer div ul li
+    column-gap: 0;
+    place-content: center;
+}
+input
+{
+    width: 250px;
+    height: 40px;
+}
+.sub-btn
+{
+    width: 150px;
+    height: 46px;
+    background-color: #E95A08;
+    border: 0;
+    color: white;
+}
+footer div ul li 
 {
     list-style: none;
 }
-.contact
+.contact 
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
     margin: auto 160px;
 }
-.social-media
+.social-media 
 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-footer div ul li a
+footer div ul li a 
 {
     list-style: none;
     text-decoration: none;
-    color: #6B7280;
+    color: #6b7280;
 }
-.white-shop
+.white-shop 
 {
     color: white;
-
 }
-@media screen and (max-width: 576px)
+.gray
 {
-    .plants
-{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 30px;
+    color: #8987A1;
 }
-}
-@media screen and (max-width: 576px)
+.black
 {
-    .fresh
+    color: black;
+}
+.modified-black
+{
+    color: #252432;
+    font-weight: bold;
+}
+@media screen and (max-width: 394px) 
+{
+    .header-1 
     {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        place-items: center;
-        /* margin: auto 189px 111px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 67px 16px auto;
     }
-    .lover
+    .responsive-none
+    {
+        display: none;
+    }
+    .fresh 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: auto 16px;
+    }
+    .always
+    {
+        width: 361px;
+        height: 147px;
+    }
+    .hero 
+    {
+        width: 375px;    
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        margin-bottom: 100px;
+    }
+    .badge 
+    {
+        display: none;
+    }
+    .lover 
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         column-gap: 10px;
         margin: auto 18px 17px;
     }
-    .plant
+    .plant 
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto 15px 16px;
+        width: 393px;
+        font-size: 14px;
     }
-    .plants
+    .plants 
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
         column-gap: 20px;
         row-gap: 28.5px;
-        margin: auto 15px 16px;
     }
-    .off
+    .single-plant 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 171px;
+        height: 340.5px;
+    }
+    .single-plant-f
+    {
+        width: 171px;
+        height: 196.5px;
+    }
+    .btn-cart 
+    {
+        width: 171px;
+        height: 50px;
+    }
+    .flower
+    {
+        width: 171px;
+        height: 196.5px;
+    }
+    .plants>*:nth-child(n+7) 
+    {
+        display: none;
+    }
+    .boy
+    {
+        width: 358px;
+        height: 396px;
+    }
+    .off 
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -262,69 +354,59 @@ footer div ul li a
         color: white;
         margin: auto 16px;
     }
-    .bloom
+    .off .item:nth-child(n + 7) 
     {
-        background-image: url(./assets/deal-bloom.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        display: none; 
+    }
+    .bloom 
+    {
         width: 361px;
         height: 184.5px;
-        border-radius: 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
         font-size: 20px;
     }
-    .ana
+    .ana 
     {
-        background-image: url(./assets/deal-ana.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 361px;
         height: 184.5px;
-        border-radius: 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         font-size: 20px;
     }
-    .zabo
+    .zabo 
     {
-        background-image: url(./assets/deal-zabo.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 361px;
         height: 172px;
-        border-radius: 22px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         font-size: 20px;
     }
-    .subscribe
+    .subscribe 
     {
-        background-image: url(./assets/news-letter-bg.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
         width: 100%;
         height: 276px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
     }
-    .contact
+    input
+    {
+        width: 150px;
+        height: 20px;
+    }
+    .sub-btn
+    {
+        width: 80px;
+        height: 25px;
+        background-color: #E95A08;
+        border: 0;
+        color: white;
+    }
+    .contact 
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         place-items: center start;
         justify-items: start;
+        margin-left: 0;
     }
 }
